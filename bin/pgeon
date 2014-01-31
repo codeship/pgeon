@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+Pgeon.config do |config|
+  config.database_host = "localhost"
+  config.database_name = "notifications"
+end
+
+Pgeon.fly
+
+at_exit do
+  Pgeon.land
+end
