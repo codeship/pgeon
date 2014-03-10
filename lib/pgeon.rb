@@ -25,4 +25,8 @@ module Pgeon
   def self.land
     @connection.close
   end
+
+  def self.invoke
+    puts __FILE__
+  end
 end

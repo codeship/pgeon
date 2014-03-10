@@ -22,8 +22,8 @@ Gem::Specification.new do |s|
 
   s.require_paths = %w[lib]
 
-  s.add_dependency "pg", "~> 0.17.0"
-  s.add_development_dependency "rspec"
+  s.add_dependency "pg", "~> 0"
+  s.add_development_dependency "rspec", "~> 2"
 
   s.executables << "pgeon"
 end
